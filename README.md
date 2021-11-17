@@ -1,6 +1,37 @@
-# Getting Started with Create React App
+# useIdle
+
+The useIdle hook is a utility to determine if a user is actively using the app. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available values
+
+### `onIdle`
+
+Function that gets called everytime the app enters idle state from active state.
+
+### `onResume`
+
+Function that gets called everytime the app resumed from inactive state.
+
+### `enabled`
+
+Provides a way to enable / disable the hook.
+
+### `idleMilliSeconds`
+
+Time before the app decides that it's idle.
+
+### `throttleMilliSeconds`
+
+Amount the hook throttles the events.
+
+### `element`
+Element to listen for interactions on.
+Defaults to "document".
+
+### `events`
+Array of events to listen for, default events are provided.
 
 ## Available Scripts
 
